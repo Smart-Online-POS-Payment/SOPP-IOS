@@ -14,6 +14,8 @@
 		ACC80F2A2AF3FBE900BF70F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80F292AF3FBE900BF70F7 /* LoginView.swift */; };
 		ACC80F2C2AF3FC2000BF70F7 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80F2B2AF3FC2000BF70F7 /* InputView.swift */; };
 		ACC80F2E2AF4029400BF70F7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80F2D2AF4029400BF70F7 /* RegisterView.swift */; };
+		ACC80F302AF40AA500BF70F7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80F2F2AF40AA500BF70F7 /* ProfileView.swift */; };
+		ACC80F342AF4139900BF70F7 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80F332AF4139900BF70F7 /* SettingsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		ACC80F292AF3FBE900BF70F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ACC80F2B2AF3FC2000BF70F7 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		ACC80F2D2AF4029400BF70F7 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		ACC80F2F2AF40AA500BF70F7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		ACC80F332AF4139900BF70F7 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC80F2B2AF3FC2000BF70F7 /* InputView.swift */,
+				ACC80F332AF4139900BF70F7 /* SettingsRowView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 		ACC80F272AF3FB9600BF70F7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				ACC80F2F2AF40AA500BF70F7 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -206,7 +212,9 @@
 				ACC80F2E2AF4029400BF70F7 /* RegisterView.swift in Sources */,
 				ACC80F2C2AF3FC2000BF70F7 /* InputView.swift in Sources */,
 				ACC80F172AF3FAF700BF70F7 /* ContentView.swift in Sources */,
+				ACC80F302AF40AA500BF70F7 /* ProfileView.swift in Sources */,
 				ACC80F152AF3FAF700BF70F7 /* SOPPIOSApp.swift in Sources */,
+				ACC80F342AF4139900BF70F7 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
