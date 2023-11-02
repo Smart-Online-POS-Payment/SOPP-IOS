@@ -49,7 +49,8 @@ struct LoginView: View {
                 // sign up button
                 
                 NavigationLink {
-                    
+                    RegisterView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack {
                         Text("Not a member?")
