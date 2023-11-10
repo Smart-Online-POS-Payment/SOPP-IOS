@@ -11,6 +11,7 @@ struct RegisterView: View {
     @State private var email = ""
     @State private var password = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         VStack {
             Image("valensas")
@@ -29,7 +30,9 @@ struct RegisterView: View {
             .padding(.top, 12)
             
             Button {
-                print("Sign user up")
+                Task {
+                    try await viewModel.createUser(withEmail: email, password: password, fullName: "mockfullname")
+                }
             } label: {
                     Text("SIGN UP")
                     .foregroundStyle(Color.white)
