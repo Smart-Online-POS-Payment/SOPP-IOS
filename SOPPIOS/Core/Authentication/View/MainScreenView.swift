@@ -13,13 +13,13 @@ struct MainScreenView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Button(action: {
-                        print("Profile View Clicked")
-                    }, label: {
-                        Text("Profile")
-                    })
-                    .padding()
+                    NavigationLink(destination: ProfileView()) {
+                        Text("My Profile")
+                            .padding(10)
+                    }
+                    
                     Spacer()
+                    
                     Button(action: {
                         print("Logout Clicked")
                     }, label: {

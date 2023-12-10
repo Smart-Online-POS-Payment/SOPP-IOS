@@ -194,7 +194,6 @@
 		ACC80F272AF3FB9600BF70F7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				ACC80F2F2AF40AA500BF70F7 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -211,6 +210,7 @@
 		ACD0EE8C2AFE15DC00DE6306 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACC80F2F2AF40AA500BF70F7 /* ProfileView.swift */,
 				ACC80F292AF3FBE900BF70F7 /* LoginView.swift */,
 				ACC80F2D2AF4029400BF70F7 /* RegisterView.swift */,
 				AC95AA8D2B260F90003AF5C0 /* MainScreenView.swift */,
