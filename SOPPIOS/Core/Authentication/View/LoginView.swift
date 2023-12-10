@@ -10,17 +10,13 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
-    @EnvironmentObject var viewModel: AuthViewModel
+    //@EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationStack{
             VStack{
-                // image
-                Image("valensas")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.vertical, 32)
                 
+                Spacer()
                 
                 // form fields
                 VStack(spacing: 24){
@@ -33,25 +29,14 @@ struct LoginView: View {
                 .padding(.horizontal)
                 .padding(.top, 12)
                 
-                
-                //sing in button
-                Button {
-                    Task {
-                        try await viewModel.signIn(withEmail: email, password: password)
-                    }
-                } label: {
-                        Text("SIGN IN")
-                        .foregroundStyle(Color.white)
-                        .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+                NavigationLink(destination: MainScreenView()){
+                    Text("Sign in")
+                        .padding()
                 }
-                .background(Color.blue)
-                .cornerRadius(10)
-                .padding(.top, 24)
                 
                 Spacer()
                 
                 // sign up button
-                
                 NavigationLink {
                     RegisterView()
                         .navigationBarBackButtonHidden(true)

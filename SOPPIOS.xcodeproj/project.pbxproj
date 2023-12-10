@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC95AA8E2B260F90003AF5C0 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95AA8D2B260F90003AF5C0 /* MainScreenView.swift */; };
+		AC95AA932B263034003AF5C0 /* QRReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95AA922B263034003AF5C0 /* QRReaderView.swift */; };
+		AC95AA952B2630FE003AF5C0 /* UploadMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95AA942B2630FE003AF5C0 /* UploadMoneyView.swift */; };
+		AC95AA972B2631B3003AF5C0 /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95AA962B2631B3003AF5C0 /* PaymentsView.swift */; };
 		ACC80F152AF3FAF700BF70F7 /* SOPPIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80F142AF3FAF700BF70F7 /* SOPPIOSApp.swift */; };
 		ACC80F172AF3FAF700BF70F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80F162AF3FAF700BF70F7 /* ContentView.swift */; };
 		ACC80F192AF3FAFD00BF70F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC80F182AF3FAFD00BF70F7 /* Assets.xcassets */; };
@@ -49,6 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC95AA8D2B260F90003AF5C0 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		AC95AA922B263034003AF5C0 /* QRReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderView.swift; sourceTree = "<group>"; };
+		AC95AA942B2630FE003AF5C0 /* UploadMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadMoneyView.swift; sourceTree = "<group>"; };
+		AC95AA962B2631B3003AF5C0 /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
 		ACC80F112AF3FAF700BF70F7 /* SOPPIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPPIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC80F142AF3FAF700BF70F7 /* SOPPIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPPIOSApp.swift; sourceTree = "<group>"; };
 		ACC80F162AF3FAF700BF70F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -205,6 +213,10 @@
 			children = (
 				ACC80F292AF3FBE900BF70F7 /* LoginView.swift */,
 				ACC80F2D2AF4029400BF70F7 /* RegisterView.swift */,
+				AC95AA8D2B260F90003AF5C0 /* MainScreenView.swift */,
+				AC95AA922B263034003AF5C0 /* QRReaderView.swift */,
+				AC95AA942B2630FE003AF5C0 /* UploadMoneyView.swift */,
+				AC95AA962B2631B3003AF5C0 /* PaymentsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,11 +333,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC80F2A2AF3FBE900BF70F7 /* LoginView.swift in Sources */,
+				AC95AA8E2B260F90003AF5C0 /* MainScreenView.swift in Sources */,
 				ACC80F2E2AF4029400BF70F7 /* RegisterView.swift in Sources */,
 				ACC80F2C2AF3FC2000BF70F7 /* InputView.swift in Sources */,
 				ACC80F172AF3FAF700BF70F7 /* ContentView.swift in Sources */,
 				ACD0EE522AFE0CCD00DE6306 /* User.swift in Sources */,
+				AC95AA932B263034003AF5C0 /* QRReaderView.swift in Sources */,
+				AC95AA972B2631B3003AF5C0 /* PaymentsView.swift in Sources */,
 				ACC80F302AF40AA500BF70F7 /* ProfileView.swift in Sources */,
+				AC95AA952B2630FE003AF5C0 /* UploadMoneyView.swift in Sources */,
 				ACC80F152AF3FAF700BF70F7 /* SOPPIOSApp.swift in Sources */,
 				ACC80F342AF4139900BF70F7 /* SettingsRowView.swift in Sources */,
 				ACD0EE8F2AFE163A00DE6306 /* AuthViewModel.swift in Sources */,

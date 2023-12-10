@@ -9,7 +9,73 @@ import SwiftUI
 
 struct MainScreenView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack {
+            VStack {
+                HStack {
+                    Button(action: {
+                        print("Profile View Clicked")
+                    }, label: {
+                        Text("Profile")
+                    })
+                    .padding()
+                    Spacer()
+                    Button(action: {
+                        print("Logout Clicked")
+                    }, label: {
+                        Text("Logout")
+                    })
+                    .padding()
+                }
+                
+                
+                Spacer()
+                
+                VStack {
+                    Text("Wallet")
+                    Text("Balance: Otl")
+                        
+                    HStack {
+                        NavigationLink(destination: QRReaderView()) {
+                            Text("QR Payment")
+                                .frame(width: 80, height: 80)
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
+                        .padding(10)
+                        
+                        
+                        NavigationLink(destination: UploadMoneyView()) {
+                            Text("Upload Money")
+                                .frame(width: 80, height: 80)
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
+                        .padding(10)
+                    }
+                    
+                    NavigationLink(destination: PaymentsView()) {
+                        Text("Payments")
+                            .frame(width: 80, height: 80)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .padding(10)
+                    
+                    
+                    
+                }
+                
+                Spacer()
+            }
+            
+        }
     }
 }
 
