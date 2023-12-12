@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6335F72B28912E00617341 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = AC6335F62B28912E00617341 /* CodeScanner */; };
 		AC95AA8E2B260F90003AF5C0 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95AA8D2B260F90003AF5C0 /* MainScreenView.swift */; };
 		AC95AA932B263034003AF5C0 /* QRReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95AA922B263034003AF5C0 /* QRReaderView.swift */; };
 		AC95AA952B2630FE003AF5C0 /* UploadMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95AA942B2630FE003AF5C0 /* UploadMoneyView.swift */; };
@@ -89,6 +90,7 @@
 				ACD0EE5D2AFE157900DE6306 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				ACD0EE632AFE157900DE6306 /* FirebaseAuth in Frameworks */,
 				ACD0EE672AFE157900DE6306 /* FirebaseCrashlytics in Frameworks */,
+				AC6335F72B28912E00617341 /* CodeScanner in Frameworks */,
 				ACD0EE872AFE157900DE6306 /* FirebaseRemoteConfigSwift in Frameworks */,
 				ACD0EE792AFE157900DE6306 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				ACD0EE6B2AFE157900DE6306 /* FirebaseDatabaseSwift in Frameworks */,
@@ -273,6 +275,7 @@
 				ACD0EE862AFE157900DE6306 /* FirebaseRemoteConfigSwift */,
 				ACD0EE882AFE157900DE6306 /* FirebaseStorage */,
 				ACD0EE8A2AFE157900DE6306 /* FirebaseStorageCombine-Community */,
+				AC6335F62B28912E00617341 /* CodeScanner */,
 			);
 			productName = SOPPIOS;
 			productReference = ACC80F112AF3FAF700BF70F7 /* SOPPIOS.app */;
@@ -304,6 +307,7 @@
 			mainGroup = ACC80F082AF3FAF700BF70F7;
 			packageReferences = (
 				ACD0EE552AFE157900DE6306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AC6335F52B28912E00617341 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = ACC80F122AF3FAF700BF70F7 /* Products */;
 			projectDirPath = "";
@@ -478,13 +482,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SOPPIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = MGXA47LNB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,13 +514,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SOPPIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = MGXA47LNB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,6 +562,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AC6335F52B28912E00617341 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.3;
+			};
+		};
 		ACD0EE552AFE157900DE6306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -561,6 +581,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC6335F62B28912E00617341 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC6335F52B28912E00617341 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
 		ACD0EE562AFE157900DE6306 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ACD0EE552AFE157900DE6306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
